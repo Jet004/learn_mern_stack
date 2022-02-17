@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        fetch('http://localhost:4000/user/login', {
+            method: "post",	
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify({
+                "email": "philhope2@tafe.qld.edu.au",
+            "password": "password"
+            })
+            })
+
+        setTimeout( fetch('http://localhost:4000/user/', {
+            method: "get",
+            headers: {
+                "content-type": "application/json"
+            }
+        })
+            , 10000)
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
